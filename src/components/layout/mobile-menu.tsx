@@ -87,7 +87,7 @@ export default function MobileMenu() {
         <a
           href={loginLink.href}
           onClick={() => setOpen(false)}
-          className="v-nav-link text-label-lg text-very-dark-blue/65 block text-center"
+          className="v-nav-link text-label-lg text-very-dark-blue/70 block text-center"
         >
           {loginLink.label}
         </a>

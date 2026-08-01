@@ -9,6 +9,7 @@ export default function Hero() {
         src={devices}
         alt=""
         priority
+        fetchPriority="high"
         className="ms-2.25 mt-14.75 w-126.5 max-w-none lg:absolute lg:top-28.75 lg:left-[calc(50%+28px)] lg:ms-0 lg:mt-0 lg:w-240"
       />
 
@@ -18,7 +19,7 @@ export default function Hero() {
             <span className="v-heading bg-very-dark-blue text-label tracking-label inline-flex h-6.25 w-12 items-center justify-center rounded-full text-white">
               {hero.badge}
             </span>
-            <span className="v-label text-very-dark-blue/65 text-label tracking-eyebrow">
+            <span className="v-label text-very-dark-blue/70 text-label tracking-eyebrow">
               {hero.eyebrow}
             </span>
           </p>
@@ -38,7 +39,7 @@ export default function Hero() {
             >
               {hero.ctaLabel}
             </a>
-            <p className="v-label text-very-dark-blue/65 text-label-sm tracking-hint lg:text-label lg:tracking-eyebrow">
+            <p className="v-label text-very-dark-blue/70 text-label-sm tracking-hint lg:text-label lg:tracking-eyebrow">
               {hero.ctaHint}
             </p>
           </div>
