@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-red: hsl(0, 100%, 68%);
+  --color-red-deep: hsl(0, 100%, 46%);
+  --color-very-dark-blue: hsl(230, 29%, 20%);
+  --color-dark-grayish-blue: hsl(230, 11%, 40%);
+  --color-grayish-blue: hsl(231, 7%, 48%);
+  --color-light-grayish-blue: hsl(207, 33%, 95%);
+
+  --container-page: 69.375rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-barlow);
+  --font-condensed: var(--font-barlow-condensed);
+}
+
+@layer base {
+  body {
+    @apply text-dark-grayish-blue bg-white font-sans;
+  }
+  a,
+  button {
+    @apply v-focus-ring;
+  }
+}
+
+@utility v-focus-ring {
+  @apply focus-visible:ring-very-dark-blue rounded-xs focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
+}
+
+@utility v-footer-link {
+  @apply hover:text-red-deep rounded-xs font-medium underline underline-offset-2 transition-colors;
+}
