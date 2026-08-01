@@ -2,7 +2,7 @@ export default function LogoIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 32 32"
-      fill="currentColor"
+      fill="#323334"
       role="img"
       aria-label="Monograph"
       xmlns="http://www.w3.org/2000/svg"

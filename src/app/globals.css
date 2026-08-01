@@ -5,10 +5,21 @@
   --color-red-deep: hsl(0, 100%, 46%);
   --color-very-dark-blue: hsl(230, 29%, 20%);
   --color-dark-grayish-blue: hsl(230, 11%, 40%);
-  --color-grayish-blue: hsl(231, 7%, 48%);
+  --color-grayish-blue: hsl(231, 7%, 65%);
   --color-light-grayish-blue: hsl(207, 33%, 95%);
 
   --container-page: 69.375rem;
+
+  --radius-shape: 3.75rem;
+
+  --shadow-menu: 0 5px 10px 0 rgb(0 0 0 / 0.15);
+
+  --tracking-nav: 0.0667em;
+
+  --text-nav: 0.9375rem;
+  --text-nav--line-height: 1.125rem;
+  --text-nav-menu: 1.125rem;
+  --text-nav-menu--line-height: 1.375rem;
 }
 
 @theme inline {
@@ -28,6 +39,10 @@
 
 @utility v-focus-ring {
   @apply focus-visible:ring-very-dark-blue rounded-xs focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
+}
+
+@utility v-nav-link {
+  @apply tracking-nav font-condensed font-bold uppercase hover:underline hover:underline-offset-4;
 }
 
 @utility v-footer-link {
