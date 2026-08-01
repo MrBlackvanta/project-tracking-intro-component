@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-red: hsl(0, 100%, 68%);
+  --color-red: hsl(0, 100%, 68.4%);
   --color-red-deep: hsl(0, 100%, 46%);
   --color-very-dark-blue: hsl(230, 29%, 20%);
   --color-dark-grayish-blue: hsl(230, 11%, 40%);
@@ -9,17 +9,32 @@
   --color-light-grayish-blue: hsl(207, 33%, 95%);
 
   --container-page: 69.375rem;
+  --container-copy: 17.5rem;
+  --container-headline: 8.4em;
 
+  --radius-cta: 5px;
   --radius-shape: 3.75rem;
 
   --shadow-menu: 0 5px 10px 0 rgb(0 0 0 / 0.15);
 
-  --tracking-nav: 0.0667em;
+  --tracking-label: 0.0667em;
+  --tracking-hint: 0.1786em;
+  --tracking-eyebrow: 0.3333em;
 
-  --text-nav: 0.9375rem;
-  --text-nav--line-height: 1.125rem;
-  --text-nav-menu: 1.125rem;
-  --text-nav-menu--line-height: 1.375rem;
+  --text-display: 2.5rem;
+  --text-display--line-height: 2.5rem;
+  --text-display-lg: 4rem;
+  --text-display-lg--line-height: 4rem;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.625rem;
+  --text-cta: 1rem;
+  --text-cta--line-height: 1.1875rem;
+  --text-label-sm: 0.875rem;
+  --text-label-sm--line-height: 1.0625rem;
+  --text-label: 0.9375rem;
+  --text-label--line-height: 1.125rem;
+  --text-label-lg: 1.125rem;
+  --text-label-lg--line-height: 1.375rem;
 }
 
 @theme inline {
@@ -41,10 +56,22 @@
   @apply focus-visible:ring-very-dark-blue rounded-xs focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
 }
 
+@utility v-label {
+  @apply font-condensed uppercase;
+}
+
+@utility v-heading {
+  @apply v-label font-bold;
+}
+
 @utility v-nav-link {
-  @apply tracking-nav font-condensed font-bold uppercase hover:underline hover:underline-offset-4;
+  @apply v-heading tracking-label hover:underline hover:underline-offset-4;
+}
+
+@utility v-btn {
+  @apply v-heading rounded-cta tracking-label inline-flex items-center justify-center text-white transition-colors motion-reduce:transition-none;
 }
 
 @utility v-footer-link {
-  @apply hover:text-red-deep rounded-xs font-medium underline underline-offset-2 transition-colors;
+  @apply hover:text-red-deep rounded-xs font-medium underline underline-offset-2 transition-colors motion-reduce:transition-none;
 }

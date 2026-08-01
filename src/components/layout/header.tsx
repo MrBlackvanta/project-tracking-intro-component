@@ -14,7 +14,7 @@ export default function Header() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="v-nav-link text-nav text-very-dark-blue"
+                  className="v-nav-link text-label text-very-dark-blue"
                 >
                   {link.label}
                 </a>
@@ -26,7 +26,7 @@ export default function Header() {
             <li className="ms-1.75">
               <a
                 href={loginLink.href}
-                className="v-nav-link text-nav text-very-dark-blue/65"
+                className="v-nav-link text-label text-very-dark-blue/65"
               >
                 {loginLink.label}
               </a>

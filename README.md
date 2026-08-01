@@ -21,7 +21,7 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/project-tracking-intro-component)
-- Live Site URL: [Netlify](https://vanta-project-tracking-intro-component.netlify.app)
+- Live Site URL: [Netlify](https://vanta-project-tracking-intro-componen.netlify.app)
 
 ## My process
 

@@ -64,8 +64,8 @@ export default function MobileMenu() {
         aria-label="Primary"
         inert={!open}
         className={cn(
-          "shadow-menu absolute inset-x-0 top-full mt-9.5 hidden rounded-[3px] bg-white px-6 py-6 opacity-0 transition-[opacity,display] transition-discrete duration-200 ease-out motion-reduce:transition-none",
-          { "block opacity-100 starting:opacity-0": open },
+          "shadow-menu absolute inset-x-0 top-full mt-9.5 hidden rounded-[3px] bg-white px-6 py-6",
+          { block: open },
         )}
       >
         <ul className="flex flex-col gap-6">
@@ -74,7 +74,7 @@ export default function MobileMenu() {
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="v-nav-link text-nav-menu text-very-dark-blue block text-center"
+                className="v-nav-link text-label-lg text-very-dark-blue block text-center"
               >
                 {link.label}
               </a>
@@ -87,7 +87,7 @@ export default function MobileMenu() {
         <a
           href={loginLink.href}
           onClick={() => setOpen(false)}
-          className="v-nav-link text-nav-menu text-very-dark-blue/65 block text-center"
+          className="v-nav-link text-label-lg text-very-dark-blue/65 block text-center"
         >
           {loginLink.label}
         </a>

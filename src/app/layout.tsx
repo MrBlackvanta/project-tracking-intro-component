@@ -20,7 +20,7 @@ const barlowCondensed = Barlow_Condensed({
 const title = "Project tracking intro component";
 const description =
   "Project planning and time tracking for agile teams — Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl = "https://vanta-project-tracking-intro-component.netlify.app";
+const siteUrl = "https://vanta-project-tracking-intro-componen.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -58,7 +58,7 @@ export default function RootLayout({
       lang="en"
       className={`${barlow.variable} ${barlowCondensed.variable} antialiased`}
     >
-      <body className="flex min-h-dvh flex-col overflow-x-clip">
+      <body className="flex min-h-dvh flex-col">
         {children}
         <Footer />
       </body>
