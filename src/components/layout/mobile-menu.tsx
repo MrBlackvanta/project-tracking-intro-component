@@ -64,7 +64,7 @@ export default function MobileMenu() {
         aria-label="Primary"
         inert={!open}
         className={cn(
-          "shadow-menu absolute inset-x-0 top-full mt-9.5 hidden rounded-[3px] bg-white px-6 py-6",
+          "shadow-menu absolute top-full right-0 mt-9.5 hidden w-full max-w-77.75 rounded-[3px] bg-white px-6 py-6",
           { block: open },
         )}
       >
