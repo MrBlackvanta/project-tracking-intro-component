@@ -20,7 +20,7 @@ const barlowCondensed = Barlow_Condensed({
 const title = "Project tracking intro component";
 const description =
   "Project planning and time tracking for agile teams — Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl = "https://vanta-project-tracking-intro-componen.netlify.app";
+const siteUrl = "https://project-tracking-intro-component.abdelrhman-ahmed8881.workers.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
