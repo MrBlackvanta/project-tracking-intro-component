@@ -17,13 +17,22 @@ const barlowCondensed = Barlow_Condensed({
   display: "swap",
 });
 
-const title = "Project tracking intro component";
+const SITE_URL =
+  "https://project-tracking-intro-component.abdelrhman-ahmed8881.workers.dev";
+
+const title = "Monograph | Project tracking for agile teams";
 const description =
-  "Project planning and time tracking for agile teams — Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl = "https://project-tracking-intro-component.abdelrhman-ahmed8881.workers.dev";
+  "Project planning and time tracking for agile teams. See how the work is really going, then schedule a demo of the Monograph dashboard.";
+
+const shareImage = {
+  url: "/opengraph-image.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Monograph, beside a phone and laptop showing its project dashboard.",
+};
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title,
   description,
   alternates: { canonical: "/" },
@@ -31,14 +40,16 @@ export const metadata: Metadata = {
     title,
     description,
     url: "/",
-    siteName: title,
+    siteName: "Monograph",
     locale: "en_US",
     type: "website",
+    images: [shareImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description,
+    images: [shareImage],
   },
 };
 
