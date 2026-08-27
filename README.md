@@ -23,7 +23,6 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/project-tracking-intro-component)
 - Live Site URL: [Cloudflare](https://project-tracking-intro-component.abdelrhman-ahmed8881.workers.dev)
-- Mirror: [Netlify](https://vanta-project-tracking-intro-componen.netlify.app)
 
 ## My process
 
@@ -98,6 +97,6 @@ an absolutely positioned descendant.
 
 ## Author
 
-- UpWork - [Abdelrhman Abdelaal](https://upwork.com/freelancers/~01f0a9479696b61f49)
+- UpWork - [Abdelrhman Abdelaal](https://www.upwork.com/freelancers/mrblackvanta)
 - Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
 - LinkedIn - [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)
