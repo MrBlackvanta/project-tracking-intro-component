@@ -1,6 +1,7 @@
 import { Footer } from "@/components/layout";
 import type { Metadata, Viewport } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
+import { SITE_URL } from "@/app/site";
 import "./globals.css";
 
 const barlow = Barlow({
@@ -16,9 +17,6 @@ const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
   display: "swap",
 });
-
-const SITE_URL =
-  "https://project-tracking-intro-component.abdelrhman-ahmed8881.workers.dev";
 
 const title = "Monograph | Project tracking for agile teams";
 const description =
